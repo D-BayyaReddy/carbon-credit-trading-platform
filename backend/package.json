@@ -1,0 +1,29 @@
+{
+  "name": "carbon-credit-backend",
+  "version": "1.0.0",
+  "description": "Blockchain-based carbon credit trading platform backend",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "compile": "npx hardhat compile",
+    "deploy": "npx hardhat run scripts/deploy.js --network localhost",
+    "test": "npx hardhat test"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "jsonwebtoken": "^9.0.2",
+    "bcryptjs": "^2.4.3",
+    "sqlite3": "^5.1.6",
+    "sequelize": "^6.32.1",
+    "web3": "^4.2.0",
+    "dotenv": "^16.3.1",
+    "axios": "^1.5.0"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^3.0.0",
+    "hardhat": "^2.17.0",
+    "nodemon": "^3.0.1"
+  }
+}   
